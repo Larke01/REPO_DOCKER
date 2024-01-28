@@ -1,0 +1,7 @@
+docker run --name MONSITE -p 8080:80 -d \
+  -v $(pwd)/MyApp/wordpress:/var/www/html \
+  -e WORDPRESS_DB_HOST=db_host \
+  -e WORDPRESS_DB_NAME=db_name \
+  -e WORDPRESS_DB_USER=db_user \
+  -e WORDPRESS_DB_PASSWORD=db_password \
+  wordpress
